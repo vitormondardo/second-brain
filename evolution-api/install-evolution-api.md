@@ -101,3 +101,5 @@ npm.cmd run start:prod
 *Resultado esperado:
 HTTP Server ON: localhost:8080
 ```
+
+*Caso dê erro no REDIS, siga a instalação em [Instalação Redis](installation-redis.md)
