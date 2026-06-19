@@ -103,3 +103,8 @@ HTTP Server ON: localhost:8080
 ```
 
 *Caso dê erro no REDIS, siga a instalação em [Instalação Redis](installation-redis.md)
+
+## Depois de ja ter realizado todas as configurações, será apenas um comando diário até a produção em VM:
+```powershell
+npm.cmd run start:prod
+```
