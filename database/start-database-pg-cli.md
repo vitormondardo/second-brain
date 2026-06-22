@@ -6,7 +6,7 @@
 
 Exemplo: C:\pgsql\bin\pg_ctl.exe
 
-## 3. Inicie o banco de dados: pasta data
+## 3. Inicie o banco de dados
 
 ```powershell
-C:\pgsql\bin\pg_ctl.exe start -D C:\pgsql\data
+.\pg_ctl.exe start -D C:\pgsql\data
