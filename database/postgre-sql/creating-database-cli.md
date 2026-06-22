@@ -1,6 +1,12 @@
 # Como criar um banco de dados Postgres via linha de comando{
 
-## 1. Conecte-se ao servidor principal
+## 1. Logar como super usuário
+
+.\psql -U postgres -- powershell
+
+sudo -u postgres psql -- linux
+
+Conecte-se ao servidor principal
 ```powershell
 "C:\pgsql\bin\psql.exe" -U postgres
 ```
