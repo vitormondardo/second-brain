@@ -1,7 +1,9 @@
 ## Descrição da Mudança
 ## Issue Relacionada
+Use para fechar o issue junto com o PR:
+```bash
 Closes #<numero-do-issue>
-
+```
 ## Tipo de Mudança
 - [ ] 🐛 Correção de Bug (mudança não-quebrável que corrige um problema)
 - [ ] ✨ Nova Funcionalidade (mudança não-quebrável que adiciona algo novo)
