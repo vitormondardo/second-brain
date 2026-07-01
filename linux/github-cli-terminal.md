@@ -1,3 +1,7 @@
+Acesso: 
+```bash
+https://github.com/cli/cli/releases
+```
 ## Método 1: Instalação Manual (Portátil / Arquivo ZIP)
 Este é o método mais à prova de falhas, pois você apenas baixa os arquivos e diz ao Windows onde eles estão.
 
