@@ -1,6 +1,6 @@
 ## Descrição da Mudança
 ## Issue Relacionada
-Fixes #
+Closes #<numero-do-issue>
 
 ## Tipo de Mudança
 - [ ] 🐛 Correção de Bug (mudança não-quebrável que corrige um problema)
