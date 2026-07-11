@@ -1,0 +1,125 @@
+# Fluxo Git -- Projeto chatbot-whatsapp
+
+## Objetivo
+
+Manter `develop`, `main` e os dois computadores sincronizados.
+
+## Fluxo diário
+
+### Antes de começar a trabalhar (em qualquer computador)
+
+``` bash
+git checkout develop
+git pull origin develop
+```
+
+### Durante o desenvolvimento
+
+``` bash
+git add .
+git commit -m "mensagem do commit"
+git push origin develop
+```
+
+## Publicando em produção
+
+1.  Abra um Pull Request de `develop` para `main`.
+2.  Faça o merge no GitHub.
+
+## Depois que o PR for aprovado
+
+Sincronize a `develop` com o commit de merge criado na `main`:
+
+``` bash
+git checkout develop
+git pull origin develop
+git pull origin main
+git push origin develop
+```
+
+> Isso evita que o GitHub mostre que a `develop` está "atrás" da `main`.
+
+## No outro computador
+
+Antes de trabalhar:
+
+``` bash
+git checkout develop
+git pull origin develop
+```
+
+Pronto. O código ficará igual ao GitHub.
+
+## Como verificar se está tudo sincronizado
+
+``` bash
+git status
+```
+
+Resultado esperado:
+
+``` text
+On branch develop
+Your branch is up to date with 'origin/develop'.
+
+nothing to commit, working tree clean
+```
+
+## Comandos úteis
+
+### Ver commits que existem na `main` e não na `develop`
+
+``` bash
+git log origin/develop..origin/main --oneline
+```
+
+### Ver commits que existem na `develop` e não na `main`
+
+``` bash
+git log origin/main..origin/develop --oneline
+```
+
+### Atualizar referências remotas
+
+``` bash
+git fetch origin
+```
+
+## Resolução do problema "develop está atrás da main"
+
+Se a diferença for apenas um commit de merge do GitHub:
+
+``` bash
+git checkout develop
+git pull origin develop
+git pull origin main
+git push origin develop
+```
+
+## Resumo do fluxo
+
+``` text
+Computador A
+    │
+    ├─ git pull origin develop
+    ├─ Desenvolver
+    ├─ git push origin develop
+    │
+    ▼
+GitHub (develop)
+    │
+    ├─ Pull Request
+    ▼
+GitHub (main)
+    │
+    ├─ git pull origin main
+    ├─ git push origin develop
+    ▼
+GitHub (develop)
+    │
+    ▼
+Computador B
+    ├─ git pull origin develop
+    ▼
+Tudo sincronizado
+```
