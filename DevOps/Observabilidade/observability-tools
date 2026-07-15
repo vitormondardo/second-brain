@@ -1,0 +1,15 @@
+1. Trivy (Escaneamento de Contêineres e Dependências) O Trivy é uma ferramenta utilizada para verificar vulnerabilidades de segurança em imagens Docker
+. Durante a construção (build) da aplicação, ele escaneia a imagem base e as dependências do projeto em busca de falhas conhecidas (CVEs). Uma prática comum é configurá-lo para falhar o pipeline e interromper o deploy automaticamente caso vulnerabilidades de nível "alto" ou "crítico" sejam detectadas, garantindo que apenas imagens seguras cheguem à produção
+.
+2. pgfence (Segurança em Migrações de Banco de Dados) O pgfence é uma ferramenta de segurança específica para bancos de dados PostgreSQL. Ele analisa os arquivos SQL de migração antes do deploy (pre-deploy migration safety checks) para detectar operações perigosas que poderiam derrubar a aplicação
+. Por exemplo, ele identifica scripts que causam bloqueios pesados na tabela (como criar um índice sem a instrução CONCURRENTLY ou alterar tipos de colunas), reporta o nível de risco e fornece receitas para reescrever o código de forma segura
+.
+3. ESLint (Análise Estática de Código / Linting) O ESLint realiza a análise estática contínua do código
+. Ele atua logo nas primeiras etapas da integração contínua para encontrar problemas de sintaxe, possíveis bugs e forçar que a aplicação siga as diretrizes e os padrões de desenvolvimento seguros exigidos pela equipe
+.
+4. Dependabot e GitHub Advanced Security (Nativos do GitHub) O próprio ecossistema do GitHub Actions conta com recursos de DevSecOps integrados. O Dependabot monitora ativamente o repositório em busca de vulnerabilidades nas bibliotecas de terceiros utilizadas
+. Além disso, o GitHub suporta alertas de escaneamento de código (Code Scanning) e escaneamento de segredos (Secret Scanning), que identificam credenciais e chaves (como tokens de API ou senhas) acidentalmente inseridas no código
+.
+5. Codecov e Frameworks de Teste (Garantia de Qualidade e Comportamento) A qualidade do código é fundamental para a segurança. Ferramentas como o Codecov (geralmente integradas ao Jest em aplicações Typescript) medem a porcentagem exata de código que está sendo validada por testes automatizados
+. Ele pode ser acoplado ao GitHub Actions para comentar relatórios diretamente em um Pull Request, evidenciando visualmente as linhas de código que ainda precisam de testes e evitando que código inseguro ou frágil seja mesclado
+.
