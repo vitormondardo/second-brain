@@ -65,3 +65,36 @@ Método de aplicação: Exame com supervisão online ou presencial
 Período de validade: Três anos
 
 Elegibilidade: Os candidatos devem possuir uma certificação ativa e estar dentro do período de elegibilidade para renovação
+
+## Preparação para o exame
+
+### Etapa 1: Obtenha experiência prática
+Antes de realizar o exame Associate Cloud Engineer, recomenda-se ter mais de seis meses de experiência prática com o Google Cloud.
+
+### Etapa 2: Entenda o conteúdo do exame
+O guia do exame Associate Cloud Engineer contém uma lista completa de tópicos que podem ser abordados na prova. Consulte o guia do exame padrão (abre em uma nova guia) ou o guia do exame de renovação (abre em uma nova guia) para verificar se suas habilidades estão alinhadas aos tópicos do exame.
+
+### Etapa 3: Aprimore suas habilidades com treinamento
+Prepare-se para o exame seguindo a trilha de aprendizado para Cloud Engineer. Explore treinamentos online, aulas presenciais, laboratórios práticos e outros recursos do Google Cloud. Comece a se preparar (abre em uma nova guia)
+
+### Etapa 4: Revise as questões de exemplo
+Familiarize-se com o formato das questões do exame revisando exemplos de conteúdo (abre em uma nova guia) que podem ser abordados no exame Associate Cloud Engineer.
+
+```
+https://docs.google.com/forms/d/e/1FAIpQLSfexWKtXT2OSFJ-obA4iT3GmzgiOCGvjrT9OfxilWC1yPtmfQ/viewform
+```
+
+### Etapa 5: Agende o exame
+Decida se fará o exame remotamente (consulte os requisitos para testes online — abre em uma nova guia) ou em um centro de aplicação de exames (encontre um centro próximo a você — abre em uma nova guia).
+
+Inscreva-se (abre em uma nova guia) hoje mesmo para realizar o exame padrão ou o exame de renovação.
+
+Revise os termos e condições do exame (abre em uma nova guia) e as políticas de compartilhamento de dados (abre em uma nova guia). https://www.pearsonvue.com/us/en/onvue/requirements.html
+
+https://www.pearsonvue.com/us/en/test-takers/test-centers.html
+
+https://cp.certmetrics.com/google/en/login
+
+https://cloud.google.com/certification/terms
+
+https://cloud.google.com/learn/certification/data-sharing-policy?hl=pt-br
